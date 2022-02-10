@@ -1,0 +1,17 @@
+{{!-- <div>
+    {{#each resultArtists}}
+    <h1>{{name}}</h1>
+    <img src="{{images.[0].url}}" alt="" srcset="">
+    {{/each}}
+</div> --}}
+<div class="container row ">
+    {{#each resultArtists}}
+    <div class="card text-center text-white bg-dark" style="width: 18rem;">
+        <img src="{{images.[0].url}}" class="card-img-top" alt="{{name}}">
+        <div class="card-body">
+            <h5 class="card-title">{{name}}</h5>
+            <a href="/albums/{{id}}" class="btn btn-secondary">Albums</a>
+        </div>
+    </div>
+    {{/each}}
+</div>
